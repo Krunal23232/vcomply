@@ -1,0 +1,42 @@
+@import "../global.scss";
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include padding($top: 15px, $left: 15px, $right: 15px, $bottom: 15px);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .leftContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .button {
+      background-color: $button_color;
+      color: $white_color;
+      @include padding($top: 13px, $left: 20px, $right: 20px, $bottom: 13px);
+      outline: none;
+      border: none;
+      border-radius: 9px;
+      cursor: pointer;
+
+    }
+
+    .userContainer {
+      height: 45px;
+      width: 45px;
+      border-radius: 100%;
+      background-color: $light_color;
+      @include flexCenter;
+
+    }
+  }
+
+
+}

@@ -1,0 +1,12 @@
+@import "../global.scss";
+
+.drop {
+  display: flex;
+}
+
+
+  .taskContainer {
+    @include padding($top: 20px, $left: 15px, $right: 15px, $bottom: 0px);
+    background-color: $primary_color;
+    flex: 1;
+  }

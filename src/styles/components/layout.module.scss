@@ -1,0 +1,6 @@
+@import "../global.scss";
+
+.mainContainer {
+  @include flexCenter(column, normal,start);
+  height: 100vh;
+}

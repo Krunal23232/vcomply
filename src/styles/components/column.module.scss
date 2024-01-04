@@ -1,0 +1,76 @@
+@import "../global.scss";
+
+.columnContainer {
+  width: 30vw;
+  height: 87vh;
+  max-height: 91vh;
+  overflow-y: scroll;
+  border: 1px solid lightgray;
+  @include padding($top: 0px, $left: 15px, $right: 15px, $bottom: 0px);
+  margin-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  .task-drop {
+    padding: 5px;
+    width: 100%;
+  }
+
+  .columnContainer{
+    position: absolute;
+    color: $danger_color;
+  }
+
+  .cardContainer {
+    background-color: $white_color;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    .card {
+      background-color: $white_color;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      .closeContainer{
+        position: absolute;
+        color: $danger_color;
+        font-size: 24px;
+        right: -20px;
+        top: -30px;
+        height: 30px;
+        width: 30px;
+        object-fit: cover;
+      }
+
+      .cardHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .taskTitle {
+          font-size: 24px;
+          font-weight: 600;
+        }
+
+        .userContainer {
+          height: 45px;
+          width: 45px;
+          border-radius: 100%;
+          background-color: $light_color;
+          @include flexCenter;
+
+        }
+      }
+
+      .descriptionContainer {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .descriptionLabel {
+          color: lightgray;
+        }
+      }
+    }
+  }
+}
